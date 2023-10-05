@@ -1,0 +1,176 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrap {
+  width: 100%;
+  height: 100vh;
+  background: #1e1a2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+}
+
+.form h1 {
+  color: #fff;
+  text-align: left;
+  margin: 0;
+}
+
+.button {
+  width: 100%;
+  background-color: #8d6cfa !important;
+  font-size: 16px;
+}
+
+.swap-icon {
+  min-width: 50px;
+  min-height: 50px;
+  overflow: hidden;
+  background-color: #2d2943;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swap-icon svg {
+  transform: rotate(90deg);
+  color: #8d6cfa;
+}
+
+.tokens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.token {
+  width: 40%;
+  padding: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #26223a;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.token h2 {
+  color: #fff;
+  font-size: 16px;
+}
+
+.token figure {
+  width: 100px;
+  height: 100px;
+}
+
+.token figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.input {
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2d2943;
+  position: relative;
+}
+
+.input.error {
+  border: 1px solid red;
+}
+
+.input input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.input button:hover {
+  background-color: transparent;
+  opacity: 0.8;
+}
+
+.option-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.option-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.input-readonly {
+  cursor: default;
+}
+
+.error-msg {
+  position: absolute;
+  bottom: -40px;
+  color: red;
+  left: 0;
+}
