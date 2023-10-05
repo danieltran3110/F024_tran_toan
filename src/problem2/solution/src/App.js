@@ -125,7 +125,7 @@ function App() {
         onClose={handleCloseSuccessSnackbar}
       >
         <Alert severity="success" sx={{ width: "100%" }}>
-          This is a success message!
+          Swap token successfully!
         </Alert>
       </Snackbar>
       <div className="wrap">

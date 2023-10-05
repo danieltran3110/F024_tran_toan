@@ -174,3 +174,31 @@
   color: red;
   left: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrap {
+    height: 100%;
+    padding: 50px 0;
+  }
+  .tokens {
+    flex-direction: column;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .token {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .input {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .swap-icon svg {
+    transform: none;
+  }
+}
